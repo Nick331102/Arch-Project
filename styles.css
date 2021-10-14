@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    font-family: 'Spartan', sans-serif;
+    --very-dark-blue: #1B1D23;
+    --dark-grey: #60636D;
+    --medium-grey: #7D828F;
+    --light-grey: #C8CCD8;
+    --very-light-grey: #EEEFF4;
+    --errors: #DF5656;
+}
+
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/* Nav **************************************/
+nav {
+    padding: 20px;
+    display: flex;
+}
+
+.nav__logo--container img {
+    margin-right: 80px;
+}
+
+
+
+
+.nav__links--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.nav__links--container a {
+    text-decoration: none;
+    color: var(--medium-grey)
+}
+
+.nav__links--container a:hover {
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.nav__links--container :nth-child(1) {
+    margin-right: 50px;
+}
+
+.nav__links--container :nth-child(2) {
+    margin-right: 50px;
+}
+
+/* Responsive Nav **************/
+@media (max-width: 634px) {
+
+
+    nav {
+        position: relative;
+    }
+
+    .hamburger__menu {
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding: 10px;
+        cursor: pointer;
+
+
+    }
+
+    .burger__line {
+        width: 100%;
+        height: 2px;
+        background: var(--very-dark-blue);
+        margin-bottom: 5px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav__links--container {
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 90%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+       
+        height: 30vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+        background: var(--light-grey);
+        padding: 20px 30px;
+      
+}
+
+.nav__links--container a {
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    
+  
+
+}
+
+.nav__links--container a:hover {
+color: white;
+}
+
+
+.nav__links--container :nth-child(1) {
+    margin-right: 0px;
+}
+
+.nav__links--container :nth-child(2) {
+    margin-right: 0px;
+}
+
+.show {
+    transform: translateX(0%);
+    
+}
+
+
+
+
+
+.clicked .line1 {
+   
+   transform: rotate(-45deg) translate(-5px, 6px)
+ 
+}
+.clicked .line2 {
+    opacity: 0;
+}
+.clicked .line3 {
+   
+    transform: rotate(45deg) translate(-3px, -6px);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

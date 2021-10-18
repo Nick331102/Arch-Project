@@ -126,7 +126,7 @@ nav {
     text-decoration: none;
     background: var(--very-dark-blue);
     padding: 20px 30px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .slide__link:hover {
@@ -143,9 +143,9 @@ nav {
     background: transparent;
 
     cursor: pointer;
-    left: 20px;
+    left: 110px;
     color: white;
-    background: rgba(0, 0, 0, 0.541);
+    background: rgba(0, 0, 0, 0.363);
     border-radius: 20px;
 }
 
@@ -157,38 +157,41 @@ nav {
     background: transparent;
 
     cursor: pointer;
-    right: 20px;
+    right: 110px;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.349);
     border-radius: 20px;
 }
 
-
-
-
-
-
+.buttons button:hover {
+    color: black;
+    background-color: white;
+}
 
 
 
 .slide:first-child {
     background-image: url("/assets/home/desktop/image-hero-paramour.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .slide:nth-child(2) {
     background-image: url("/assets/home/desktop/image-hero-seraph.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .slide:nth-child(3) {
     background-image: url("/assets/home/desktop/image-hero-federal.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .slide:nth-child(4) {
     background-image: url("/assets/home/desktop/image-hero-trinity.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -236,6 +239,7 @@ nav {
         align-items: left;
         background: var(--light-grey);
         padding: 20px 30px;
+        z-index: 10;
 
     }
 

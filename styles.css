@@ -14,6 +14,8 @@
     --errors: #DF5656;
 }
 
+body {}
+
 
 main {
     max-width: 2000px;
@@ -22,7 +24,7 @@ main {
 }
 
 .container {
-    max-width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -69,6 +71,7 @@ nav {
 }
 
 /* Hero Section *********************/
+
 .slider {
     position: relative;
     overflow: hidden;
@@ -92,13 +95,13 @@ nav {
 
 .content {
     position: absolute;
-    max-width: 600px;
+    width: 600px;
     left: -600px;
-    bottom: 20px;
-    background: rgba(255, 255, 255, 0.753);
+    top: 20px;
+
     padding: 40px;
     color: var(--very-dark-blue);
-    margin-right: 20px;
+    margin-right: 60px;
     opacity: 0;
 }
 
@@ -110,7 +113,7 @@ nav {
 
 .slide__title {
     font-size: clamp(1.5rem, 4vw, 4rem);
-
+    color: var(--very-light-grey);
 }
 
 .two {
@@ -120,6 +123,8 @@ nav {
 .slide__desc {
     line-height: 1.6;
     margin-bottom: 30px;
+    color: var(--very-light-grey);
+
 }
 
 .slide__link {
@@ -135,10 +140,34 @@ nav {
     cursor: pointer;
 }
 
+.buttons__container {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    height: 80px;
+    background: var(--very-light-grey);
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.button {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.button.current {
+    background: var(--very-dark-blue);
+    color: var(--very-light-grey);
+}
+
 #next {
     position: absolute;
-    top: 30%;
-    padding: 5px;
+    top: 50%;
+    padding: 10px;
     font-size: 1rem;
     background: transparent;
 
@@ -151,8 +180,8 @@ nav {
 
 #prev {
     position: absolute;
-    top: 30%;
-    padding: 5px;
+    top: 50%;
+    padding: 10px;
     font-size: 1rem;
     background: transparent;
 
@@ -160,7 +189,7 @@ nav {
     right: 110px;
     color: white;
     background: rgba(0, 0, 0, 0.349);
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .buttons button:hover {
@@ -174,29 +203,153 @@ nav {
     background-image: url("/assets/home/desktop/image-hero-paramour.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.507);
 }
 
 .slide:nth-child(2) {
     background-image: url("/assets/home/desktop/image-hero-seraph.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.438);
 }
 
 .slide:nth-child(3) {
     background-image: url("/assets/home/desktop/image-hero-federal.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.432);
 }
 
 .slide:nth-child(4) {
     background-image: url("/assets/home/desktop/image-hero-trinity.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.445);
+}
+
+/* Welcome ******************************/
+
+
+.welcome {
+    margin-top: 15rem;
+    position: relative;
+}
+
+.welcome__title {
+    font-size: 12rem;
+    position: absolute;
+    top: -12rem;
+    left: -3rem;
+    color: var(--light-grey);
+
+}
+
+.welcome__contents {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    width: 55rem;
+    margin-left: 5rem;
+
+}
+
+.welcome__heading {
+    font-size: 4rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 2rem;
+}
+
+.welcome__description {
+    line-height: 1.8;
 }
 
 
 
+
+
+
+
+
+/*
+.welcome {
+    margin-top: 11rem;
+    position: relative;
+   
+    display: flex;
+  margin-left: 7rem;
+
+}
+
+.welcome__title {
+    font-size: 12rem;
+    position: absolute;
+    top: -4rem;
+    left: -3rem;
+    color: var(--light-grey);
+
+}
+
+.welcome__contents {
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    margin-top: 3rem;
+    margin-left: 10rem;
+
+   
+}
+
+.welcome__contents--left {
+    width: 30rem;
+}
+
+
+.welcome__contents--right {
+    background-image: url('/assets/home/desktop/image-welcome.jpg');
+    min-width: 20rem;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.welcome__heading {
+    font-size: 4rem;
+    color:var(--very-dark-blue);
+    margin-bottom: 2rem;
+}
+
+.welcome__description {
+    line-height: 1.8;
+}
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Nav **************/
+
+
 @media (max-width: 634px) {
 
 
@@ -283,5 +436,61 @@ nav {
     .clicked .line3 {
 
         transform: rotate(45deg) translate(-2.5px, -5px);
+    }
+}
+
+/* Respnsive hero slides */
+@media (max-width: 644px) {
+    .buttons__container {
+        display: none;
+    }
+
+
+}
+
+
+/* Responsive Welcome ***************/
+@media (min-width: 1500px) {
+    .welcome__contents {
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 1325px) {
+    .welcome__title {
+        font-size: 10rem;
+    }
+
+
+}
+
+@media (max-width: 1140px) {
+    .welcome__contents {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1046px) {
+    .welcome__contents--right img {
+        display: none;
+    }
+
+    .welcome__contents {
+        width: 100%;
+        margin: auto;
+        gap: 0;
+    }
+
+    .welcome__title {
+        display: none;
+    }
+
+    .welcome {
+        margin-top: 4rem;
+    }
+
+    .welcome__heading {
+        font-size: 2rem;
     }
 }

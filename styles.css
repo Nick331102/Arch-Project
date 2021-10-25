@@ -14,7 +14,7 @@
     --errors: #DF5656;
 }
 
-body {}
+
 
 
 main {
@@ -264,85 +264,126 @@ nav {
     line-height: 1.8;
 }
 
-
-
-
-
-
-
-
-/*
-.welcome {
-    margin-top: 11rem;
-    position: relative;
-   
-    display: flex;
-  margin-left: 7rem;
-
-}
-
-.welcome__title {
-    font-size: 12rem;
-    position: absolute;
-    top: -4rem;
-    left: -3rem;
-    color: var(--light-grey);
-
-}
-
-.welcome__contents {
- 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 50px;
+/* Ideas Section *************/
+.ideas {
+    height: 700px;
+    padding: 50px;
     margin-top: 3rem;
-    margin-left: 10rem;
-
-   
+    background-image: url("/assets/home/desktop/image-small-team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.507);
+    margin-bottom: 6rem;
 }
 
-.welcome__contents--left {
-    width: 30rem;
+.ideas__headline {
+    font-size: calc(1rem + 3vw);
+    color: var(--very-light-grey);
+    margin-bottom: 40px;
+}
+
+.ideas__contents {
+    margin: 100px 0 0 20px
 }
 
 
-.welcome__contents--right {
-    background-image: url('/assets/home/desktop/image-welcome.jpg');
-    min-width: 20rem;
-    height: 25rem;
+.ideas__link {
+    text-decoration: none;
+    background: var(--very-dark-blue);
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.ideas__link:hover {
+    background: var(--dark-grey);
+    transition: 0.2s ease-in-out;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+/* Featured section ************************/
+.featured {
+    height: 1000px;
+    
+}
+
+
+.featured__title--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  
+}
+
+.featured__title {
+    font-size: calc(1rem + 2vw);
+}
+
+
+.featured__button {
+    text-decoration: none;
+    background: var(--very-dark-blue);
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.featured__button:hover {
+    background: var(--dark-grey);
+    transition: 0.2s ease-in-out;
+}
+
+.featured__images--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 500px;
+    position: relative;
+
+}
+
+.featured__image--card {
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.486);
+}
+
+.featured__image--text {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    height: 100%;
+   
 
 }
 
-.welcome__heading {
-    font-size: 4rem;
-    color:var(--very-dark-blue);
-    margin-bottom: 2rem;
+.featured__image--text h3 {
+    font-size: 1rem;
+    color: var(--very-light-grey);
+    margin-bottom: 5px;
 }
 
-.welcome__description {
-    line-height: 1.8;
+.featured__image--text p {
+    color: var(--light-grey)
 }
-  */
 
+.sol {
+    background-image: url('/assets/portfolio/desktop/image-del-sol.jpg');
+ 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tower {
+    background-image: url('/assets/portfolio/desktop/image-228b.jpg');
+   
+}
+.proto {
+    background-image: url('/assets/portfolio/desktop/image-prototype.jpg');
+   
+}
 
 
 
@@ -491,6 +532,85 @@ nav {
     }
 
     .welcome__heading {
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
+
+}
+
+@media (max-width: 406px) {
+    .welcome__heading {
+        font-size: 2rem;
+        ;
+    }
+}
+
+/* Responsive Ideas **********/
+@media (max-width: 1000px) {
+    .ideas {
+        height: 600px;
+
+        background-image: url("/assets/home/tablet/image-small-team.jpg");
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .ideas {
+        height: 500px;
+
+        background-image: url("/assets/home/mobile/image-small-team.jpg");
+
+    }
+
+}
+
+/* Responsive Featured  *********************/
+@media (max-width: 890px) {
+    .featured__images--container {
+        grid-template-columns: repeat(1, 1fr);
+      
+       
+    }
+    .sol {
+        background-image: url('/assets/portfolio/tablet/image-del-sol.jpg');
+        height: 200px;
+     
+    }
+    
+    .tower {
+        background-image: url('/assets/portfolio/tablet/image-228b.jpg');
+        height: 200px;
+       
+    }
+    .proto {
+        background-image: url('/assets/portfolio/tablet/image-prototype.jpg');
+        background-size: cover;
+        height: 200px;
+        
+}
+
+}
+
+@media (max-width: 470px) {
+    .sol {
+        background-image: url('/assets/portfolio/mobile/image-del-sol.jpg');
+        height: 200px;
+     
+    }
+    
+    .tower {
+        background-image: url('/assets/portfolio/mobile/image-228b.jpg');
+        height: 200px;
+       
+    }
+    .proto {
+        background-image: url('/assets/portfolio/mobile/image-prototype.jpg');
+        background-size: cover;
+        height: 200px;
+        
+}
+
+
 }

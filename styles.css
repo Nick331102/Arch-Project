@@ -304,7 +304,7 @@ nav {
 }
 
 /* Featured section ************************/
-.featured {}
+
 
 
 .featured__title--container {
@@ -348,7 +348,7 @@ nav {
     padding: 20px;
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.486);
-    position: realtive;
+    position: relative;
 }
 
 .featured__card--number {
@@ -398,8 +398,8 @@ nav {
 
 /*   Footer ***************************/
 .footer {
-    margin-top: 9rem;
-    padding: 50px 0;
+    margin-top: 7rem;
+
     display: flex;
     align-items: flex-end;
     height: 5rem;
@@ -453,6 +453,66 @@ nav {
     background: var(--dark-grey);
     transition: 0.2s ease-in-out;
 }
+
+/* Portfolio Page ***************/
+.portfolio__images--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 2000px;
+    padding: 3rem 0;
+
+}
+
+.featured__image--card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+   
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.486);
+   
+}
+
+
+.seraph {
+    background-image: url('/assets/portfolio/desktop/image-seraph.jpg');
+}
+.eebox {
+    background-image: url('/assets/portfolio/desktop/image-eebox.jpg');
+}
+.federal {
+    background-image: url('/assets/portfolio/desktop/image-federal.jpg');
+}
+.sol {
+    background-image: url('/assets/portfolio/desktop/image-del-sol.jpg');
+}
+.proto {
+    background-image: url('/assets/portfolio/desktop/image-prototype.jpg');
+}
+.arch {
+    background-image: url('/assets/portfolio/desktop/image-228b.jpg');
+}
+
+.hotel {
+    background-image: url('/assets/portfolio/desktop/image-edelweiss.jpg');
+}
+.netcry {
+    background-image: url('/assets/portfolio/desktop/image-netcry.jpg');
+}
+.hypers {
+    background-image: url('/assets/portfolio/desktop/image-hypers.jpg');
+}
+.v {
+    background-image: url('/assets/portfolio/desktop/image-sxiv.jpg');
+}
+.trinity {
+    background-image: url('/assets/portfolio/desktop/image-trinity.jpg');
+}
+.paramour {
+    background-image: url('/assets/portfolio/desktop/image-paramour.jpg');
+}
+
 
 
 
@@ -639,7 +699,7 @@ nav {
 @media (max-width: 890px) {
 
     .featured {
-        margin-bottom: 20rem;
+        margin-bottom: 17rem;
     }
 
     .featured__images--container {
@@ -700,13 +760,41 @@ nav {
 @media (max-width: 815px) {
     .footer {
         flex-direction: column;
+        align-items: center;
+
     }
 
     .footer__button {
         display: block;
     }
 
+    .footer__left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .footer__links {
         flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+
     }
+
+    .footer__links a {
+        margin: 20px 0;
+        ;
+    }
+
+    .footer__button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .featured {
+        margin-bottom: 15rem;
+    }
+
+
 }

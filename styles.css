@@ -459,7 +459,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    height: 2000px;
+
     padding: 3rem 0;
 
 }
@@ -469,27 +469,33 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-   
+    min-height: 500px;
+
     box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.486);
-   
+
 }
 
 
 .seraph {
     background-image: url('/assets/portfolio/desktop/image-seraph.jpg');
 }
+
 .eebox {
     background-image: url('/assets/portfolio/desktop/image-eebox.jpg');
 }
+
 .federal {
     background-image: url('/assets/portfolio/desktop/image-federal.jpg');
 }
+
 .sol {
     background-image: url('/assets/portfolio/desktop/image-del-sol.jpg');
 }
+
 .proto {
     background-image: url('/assets/portfolio/desktop/image-prototype.jpg');
 }
+
 .arch {
     background-image: url('/assets/portfolio/desktop/image-228b.jpg');
 }
@@ -497,21 +503,90 @@ nav {
 .hotel {
     background-image: url('/assets/portfolio/desktop/image-edelweiss.jpg');
 }
+
 .netcry {
     background-image: url('/assets/portfolio/desktop/image-netcry.jpg');
 }
+
 .hypers {
     background-image: url('/assets/portfolio/desktop/image-hypers.jpg');
 }
+
 .v {
     background-image: url('/assets/portfolio/desktop/image-sxiv.jpg');
 }
+
 .trinity {
     background-image: url('/assets/portfolio/desktop/image-trinity.jpg');
 }
+
 .paramour {
     background-image: url('/assets/portfolio/desktop/image-paramour.jpg');
 }
+
+/* about ****************************/
+.about__hero {
+    padding-top: 1.5rem;
+}
+
+.about__hero--container {
+    display: flex;
+    position: relative;
+}
+
+.about__hero--left {
+    background-image: url("/assets/about/desktop/image-hero.jpg");
+    width: 800px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.363);
+}
+
+.about__hero--right {
+    width: 700px;
+    padding: 100px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.about__headline--large {
+    font-size: calc(3rem + 10vw);
+
+    color: var(--very-light-grey);
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+    ;
+}
+
+.about__right--headline {
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 30px;
+}
+
+.about__hero--right--description {
+    line-height: 1.8;
+    ;
+}
+
+.about__separator {
+    width: 5rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin: 40px 0;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -609,7 +684,7 @@ nav {
     }
 }
 
-/* Respnsive hero slides */
+/* Responsive hero slides */
 @media (max-width: 644px) {
     .buttons__container {
         display: none;
@@ -756,6 +831,119 @@ nav {
 
 }
 
+/* Responsive Potfolio *************************/
+@media (max-width: 1000px) {
+    .portfolio__images--container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seraph {
+        background-image: url('/assets/portfolio/tablet/image-seraph.jpg');
+    }
+
+    .eebox {
+        background-image: url('/assets/portfolio/tablet/image-eebox.jpg');
+    }
+
+    .federal {
+        background-image: url('/assets/portfolio/tablet/image-federal.jpg');
+    }
+
+    .sol {
+        background-image: url('/assets/portfolio/tablet/image-del-sol.jpg');
+    }
+
+    .proto {
+        background-image: url('/assets/portfolio/tablet/image-prototype.jpg');
+    }
+
+    .arch {
+        background-image: url('/assets/portfolio/tablet/image-228b.jpg');
+    }
+
+    .hotel {
+        background-image: url('/assets/portfolio/tablet/image-edelweiss.jpg');
+    }
+
+    .netcry {
+        background-image: url('/assets/portfolio/tablet/image-netcry.jpg');
+    }
+
+    .hypers {
+        background-image: url('/assets/portfolio/tablet/image-hypers.jpg');
+    }
+
+    .v {
+        background-image: url('/assets/portfolio/desktop/image-sxiv.jpg');
+    }
+
+    .trinity {
+        background-image: url('/assets/portfolio/desktop/image-trinity.jpg');
+    }
+
+    .paramour {
+        background-image: url('/assets/portfolio/desktop/image-paramour.jpg');
+    }
+}
+
+
+
+
+@media (max-width: 700px) {
+    .portfolio__images--container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .seraph {
+        background-image: url('/assets/portfolio/desktop/image-seraph.jpg');
+    }
+
+    .eebox {
+        background-image: url('/assets/portfolio/desktop/image-eebox.jpg');
+    }
+
+    .federal {
+        background-image: url('/assets/portfolio/desktop/image-federal.jpg');
+    }
+
+    .sol {
+        background-image: url('/assets/portfolio/desktop/image-del-sol.jpg');
+    }
+
+    .proto {
+        background-image: url('/assets/portfolio/desktop/image-prototype.jpg');
+    }
+
+    .arch {
+        background-image: url('/assets/portfolio/desktop/image-228b.jpg');
+    }
+
+    .hotel {
+        background-image: url('/assets/portfolio/desktop/image-edelweiss.jpg');
+    }
+
+    .netcry {
+        background-image: url('/assets/portfolio/desktop/image-netcry.jpg');
+    }
+
+    .hypers {
+        background-image: url('/assets/portfolio/desktop/image-hypers.jpg');
+    }
+
+    .v {
+        background-image: url('/assets/portfolio/desktop/image-sxiv.jpg');
+    }
+
+    .trinity {
+        background-image: url('/assets/portfolio/desktop/image-trinity.jpg');
+    }
+
+    .paramour {
+        background-image: url('/assets/portfolio/mobile/image-paramour.jpg');
+    }
+}
+
+
 /* Responvive Footer */
 @media (max-width: 815px) {
     .footer {
@@ -795,6 +983,60 @@ nav {
     .featured {
         margin-bottom: 15rem;
     }
+
+
+}
+
+/* responsive about *******************/
+@media (max-width:950px) {
+    .about__headline--large {
+        display: none;
+    }
+
+    .about__hero--container {
+        flex-direction: column;
+    }
+
+    .about__hero--left {
+        height: 15rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .about__hero--left--block {
+        width: 90%;
+        height: 2.5rem;
+        background: white;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .about__hero--right {
+        position: static;
+        width: 100%;
+        ;
+        padding: 0;
+    }
+
+
+    main {
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .about__hero--right {
+        padding: 20px;
+    }
+
+
+
+
+
+
+
 
 
 }

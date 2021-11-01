@@ -584,7 +584,7 @@ nav {
 /*  Heritage Section ********************/
 
 .heritage {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
 }
 
@@ -652,7 +652,23 @@ nav {
 
 .leaders__image {
     width: 100%;
+    position: relative;
 }
+
+.leaders__title {
+    margin-bottom: 10px;
+}
+
+.twit {
+    margin-left: 10px;
+}
+
+i:hover {
+    cursor: pointer;
+    color: grey;
+    transition: 0.3s ease-in-out;
+}
+
 
 
 

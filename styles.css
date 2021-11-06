@@ -26,6 +26,7 @@ main {
 .container {
     width: 80%;
     margin: 0 auto;
+
 }
 
 
@@ -95,13 +96,10 @@ nav {
 
 .content {
     position: absolute;
-    width: 600px;
+    max-width: 600px;
     left: -600px;
-    top: 20px;
-
-    padding: 40px;
-    color: var(--very-dark-blue);
-    margin-right: 60px;
+    top: 20px;  
+    padding: 20px;
     opacity: 0;
 }
 
@@ -166,13 +164,13 @@ nav {
 
 #next {
     position: absolute;
-    top: 50%;
+    top: 60%;
     padding: 10px;
     font-size: 1rem;
     background: transparent;
 
     cursor: pointer;
-    left: 110px;
+    right: 50px;
     color: white;
     background: rgba(0, 0, 0, 0.363);
     border-radius: 20px;
@@ -180,13 +178,13 @@ nav {
 
 #prev {
     position: absolute;
-    top: 50%;
+    top: 60%;
     padding: 10px;
     font-size: 1rem;
     background: transparent;
 
     cursor: pointer;
-    right: 110px;
+    left: 50px;
     color: white;
     background: rgba(0, 0, 0, 0.349);
     border-radius: 40px;
@@ -349,6 +347,8 @@ nav {
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.486);
     position: relative;
+
+
 }
 
 .featured__card--number {
@@ -398,7 +398,7 @@ nav {
 
 /*   Footer ***************************/
 .footer {
-    margin-top: 7rem;
+   
 
     display: flex;
     align-items: flex-end;
@@ -452,6 +452,7 @@ nav {
 .footer__button:hover {
     background: var(--dark-grey);
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 /* Portfolio Page ***************/
@@ -554,7 +555,7 @@ nav {
 }
 
 .about__headline--large {
-    font-size: calc(3rem + 10vw);
+    font-size: calc(3rem + 6vw);
 
     color: var(--very-light-grey);
     position: absolute;
@@ -627,7 +628,7 @@ nav {
 
 /* Leaders ******************************/
 .leaders {
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 
@@ -702,7 +703,7 @@ i:hover {
 }
 
 .contact__headline--large {
-    font-size: calc(3rem + 10vw);
+    font-size: calc(3rem + 6vw);
 
     color: var(--very-light-grey);
     position: absolute;
@@ -762,6 +763,7 @@ i:hover {
 .view__container {
     display: flex;
     align-items: center;
+
 }
 
 .view {
@@ -778,10 +780,137 @@ i:hover {
     margin-bottom: 15px;
 }
 
+/* contact map *************/
+
+.contact__map {
+    margin-top: 4rem;
+    background-image: url("/assets/contact/desktop/image-map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+/* contact form *************************/
+.contact__form {
+    margin-top: 4rem;
+  
+    display: flex;
+
+    margin-bottom: 6rem;
+
+}
+
+.form__container {
+    width: 100%;
+}
+
+.contact__form--headline {
+    font-size: calc(1rem + 2vw);
+    margin-right: 4rem;
+}
+
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    color: var(--dark-grey);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+    position: relative;
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    border-bottom: 1px solid black;
+    resize: none;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    color: var(--dark-grey);
+    padding: 20px;
+    position: relative;
+}
+
+.form__button {
+    padding: 20px;
+    width: 100px;
+    ;
+    background-color: var(--very-dark-blue);
+    align-self: flex-end;
+    cursor: pointer
+}
+
+
+.form__button:hover {
+    background: var(--medium-grey);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.button__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__input {
+    position: relative;
+}
+
+
+
+.name,
+.email {
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    ;
+    right: 0;
+
+}
+
+
+.form__error {
+    opacity: 0;
+    position: absolute;
+    top: 210px;
+    ;
+    right: 0;
+
+}
+
+.form__error.show {
+    opacity: 1;
+    color: red;
+}
+
+
+
+
+
+
+
+
 /* Responsive Nav **************/
 
 
-@media (max-width: 634px) {
+@media (max-width: 700px) {
 
 
     nav {
@@ -797,6 +926,7 @@ i:hover {
         right: 30px;
         padding: 10px;
         cursor: pointer;
+        z-index: 11;
 
 
     }
@@ -823,7 +953,8 @@ i:hover {
         align-items: left;
         background: var(--light-grey);
         padding: 20px 30px;
-        z-index: 10;
+
+        z-index: 11;
 
     }
 
@@ -854,6 +985,20 @@ i:hover {
 
 
 
+    .overlay {
+
+        background-color: rgba(0, 0, 0, 0);
+        width: 100vw;
+        height: 100vh;
+
+        z-index: -1;
+
+    }
+
+
+
+
+
 
     .clicked .line1 {
 
@@ -871,11 +1016,37 @@ i:hover {
 }
 
 /* Responsive hero slides */
+@media (max-width:718px ) {
+    .content {
+        width: 500px;
+    }
+}
+
+@media (max-width:586px ) {
+    .content {
+        width: 350px;
+    }
+    .slide__desc {
+        font-size: .9rem;
+    }
+
+    .container {
+       width: 100%;
+       padding: 10px;
+    }
+
+
+}
+
+
+
+
+
+
 @media (max-width: 644px) {
     .buttons__container {
         display: none;
     }
-
 
 }
 
@@ -1167,7 +1338,7 @@ i:hover {
     }
 
     .featured {
-        margin-bottom: 15rem;
+        margin-bottom: 70rem;
     }
 
 
@@ -1316,4 +1487,47 @@ i:hover {
         flex-direction: column;
     }
 
+}
+
+/* Responsive Contact Map */
+@media (max-width: 1050px) {
+    .contact__map {
+        background-image: url("/assets/contact/tablet/image-map.png");
+
+
+    }
+}
+
+@media (max-width: 660px) {
+    .contact__map {
+        background-image: url("/assets/contact/mobile/image-map.png");
+        background-size: contain;
+        height: 310px;
+        width: 100%;
+    }
+}
+
+/* Responsive Contact ********************/
+
+@media (max-width: 676px) {
+    .contact__form--container {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact__form--headline {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Responsive Connect */
+
+@media (max-width: 700px) {
+    .contact__form {
+        flex-direction: column;
+
+    }
 }

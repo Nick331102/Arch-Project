@@ -302,6 +302,10 @@ nav {
 }
 
 /* Featured section ************************/
+.featured {
+    margin-bottom: 5rem;
+}
+
 
 
 
@@ -435,8 +439,8 @@ nav {
 }
 
 .footer__links a:hover {
-    border-bottom: 1px solid white;
-    transition: 0.3s ease-in-out;
+   color: black;
+   transition: 0.3s ease-in-out;
 }
 
 .footer__button {
@@ -629,7 +633,7 @@ nav {
 
 /* Leaders ******************************/
 .leaders {
-    margin: 4rem 0;
+    margin: 4rem 0 5rem 0;
 }
 
 

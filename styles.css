@@ -483,31 +483,31 @@ nav {
 
 
 .seraph {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-seraph.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-seraph.jpg');
 }
 
 .eebox {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-eebox.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-eebox.jpg');
 }
 
 .federal {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-federal.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-federal.jpg');
 }
 
 .sol {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-del-sol.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-del-sol.jpg');
 }
 
 .proto {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-prototype.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-prototype.jpg');
 }
 
 .arch {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-228b.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-228b.jpg');
 }
 
 .hotel {
-    background-image: url('.arch__project/assets/portfolio/desktop/image-edelweiss.jpg');
+    background-image: url('./arch__project/assets/portfolio/desktop/image-edelweiss.jpg');
 }
 
 .netcry {

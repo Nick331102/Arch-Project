@@ -198,7 +198,7 @@ nav {
 
 
 .slide:first-child {
-    background-image: url("assets/home/desktop/image-hero-paramour.jpg");
+    background-image: url("./arch/assets/home/desktop/image-hero-paramour.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: inset 0 0 0 1000px rgba(17, 16, 19, 0.507);
